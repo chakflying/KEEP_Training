@@ -1,20 +1,26 @@
 #include <stdio.h>
 
+void one();
+
 int main() {
 	int swt, flag = 1;
 	
-	printf("Git is cool!\n Enter your function number:\n");
+	printf("Git is cool!\n");
+	printf("0: Escape\n");
+	printf("1: Tester\n");
+	
 	while(flag){
-	scanf("%d",&swt);
-	
-	swtich(swt):
-	case 0: flag = 0;
-			break;
-	case 1: one();
-			break;
-	
-	}
-	
+		printf("Enter your function number:\n");
+		scanf("%d",&swt);		
+		switch(swt){	//add case here
+			case 0: flag = 0;
+					break;
+			case 1: one();
+					break;
+					
+			default: break;
+		}
+	}	
 	return 0;
 }
 
